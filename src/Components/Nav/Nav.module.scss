@@ -1,0 +1,118 @@
+$highlightColor: #feda6a;
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  transition-timing-function: ease-in;
+  transition: all 0.2s ease-out;
+
+  &__solid {
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 2;
+  }
+
+  &__logo {
+    font-size: 1.3em;
+    cursor: pointer;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
+
+    &:hover {
+      color: $highlightColor;
+    }
+  }
+
+  &__linkButton {
+    background: transparent;
+    border: none;
+    font-family: "Montserrat";
+    font-size: 0.9em;
+    color: white;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    opacity: 0.85;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__linkButtonMobile {
+    font-size: 1.5em;
+    height: 100px;
+  }
+
+  &__linkActive {
+    font-weight: 800;
+    color: $highlightColor;
+  }
+
+  &__linksContainer {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__svgContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  &__menuSVG {
+    fill: white;
+    height: 1.2em;
+    width: 1.2em;
+    cursor: pointer;
+  }
+
+  &__linksContainerMobile {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 3;
+
+    display: flex;
+    flex-direction: column;
+
+    &__CloseButtonContainer {
+      display: flex;
+      justify-content: flex-end;
+
+      padding: 15px 40px;
+    }
+
+    &__CloseButton {
+      background: transparent;
+      border: none;
+      padding: 0;
+      color: white;
+      font-family: "Montserrat";
+      font-size: 2em;
+      font-weight: 800;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav {
+    padding: 20px 20px;
+
+    &__solid {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    &__linksContainerMobile {
+      &__CloseButtonContainer {
+        padding: 15px 20px;
+      }
+    }
+  }
+}

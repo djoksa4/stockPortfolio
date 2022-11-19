@@ -1,0 +1,94 @@
+$highlightColor: #feda6a;
+
+.hero {
+  padding: 200px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat";
+
+  &__svgContainer {
+    margin-bottom: 30px;
+  }
+
+  &__logoSVG {
+    fill: white;
+    height: 170px;
+    filter: drop-shadow(6px 6px 2px rgba(0, 0, 0, 0.5));
+  }
+
+  &__header {
+    font-size: 80px;
+    letter-spacing: 10px;
+    position: relative;
+    margin-bottom: 45px;
+    text-shadow: 6px 6px 3px rgba(0, 0, 0, 0.5);
+
+    text-align: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      left: 40%;
+      height: 1px;
+      width: 20%;
+      background: rgba($highlightColor, 0.4);
+    }
+  }
+
+  &__description {
+    margin-bottom: 70px;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 5px;
+    color: rgba(255, 255, 255, 0.6);
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+
+  &__buttonsContainer {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__button {
+    padding: 8px 25px;
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid rgba($highlightColor, 0.8);
+
+    color: rgba($highlightColor, 0.8);
+    // box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.25s;
+    font-family: "Montserrat";
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: inset 0 0 0 1.5em rgba($highlightColor, 0.6);
+      color: white;
+    }
+  }
+
+  &__sectionContainer {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero {
+    padding: 150px 40px;
+
+    &__header {
+      font-size: 50px;
+    }
+
+    &__description {
+      margin-bottom: 30px;
+    }
+
+    &__sectionContainer {
+      width: 100%;
+    }
+  }
+}

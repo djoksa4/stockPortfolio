@@ -1,0 +1,50 @@
+$highlightColor: #feda6a;
+
+.work {
+  &__itemContainer {
+  }
+
+  &__img {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    filter: grayscale(30%);
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  &__descriptionContainer {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+
+    h3 {
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 500;
+      text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
+      margin-bottom: 30px;
+    }
+
+    p {
+      line-height: 1.4;
+      color: rgba(255, 255, 255, 0.5);
+      text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
+      margin-bottom: 15px;
+    }
+
+    a {
+      text-decoration: none;
+      color: rgba($highlightColor, 0.8);
+      text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
+      line-height: 0;
+
+      &:hover {
+        color: rgba($highlightColor, 1);
+      }
+    }
+  }
+}

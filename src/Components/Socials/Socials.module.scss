@@ -1,0 +1,66 @@
+$highlightColor: #feda6a;
+
+.socials {
+  position: fixed;
+  bottom: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+
+  &__button {
+    padding: 5px 15px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 3px;
+    opacity: 0.8;
+    font-size: 14px;
+    cursor: pointer;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -7px;
+      left: calc(50% - 5px);
+      width: 0;
+      height: 0;
+      border-bottom: 5px solid $highlightColor;
+      border-right: 5px solid transparent;
+      border-left: 5px solid transparent;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 15px;
+    padding: 8px 10px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 3px;
+    opacity: 0.8;
+    font-size: 14px;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    a {
+      height: 35px;
+    }
+  }
+
+  &__svg {
+    height: 35px;
+    width: 35px;
+    fill: rgba(white, 0.8);
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      fill: rgba($highlightColor, 0.9);
+      transform: scale(110%);
+    }
+  }
+}
