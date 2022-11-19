@@ -2,7 +2,9 @@
 
 body {
   min-height: 100vh;
+
   margin: 0;
+
   font-family: -apple-system, BlinkMacSystemFont, "Montserrat", "Roboto",
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -30,4 +32,13 @@ code {
 .slick-prev:before,
 .slick-next:before {
   color: #fed96abd !important;
+}
+
+@media only screen and (max-width: 1000px) {
+  .slick-prev:before {
+    margin-right: -100%;
+  }
+  .slick-next:before {
+    margin-left: -100%;
+  }
 }

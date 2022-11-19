@@ -122,3 +122,9 @@ $highlightColor: #feda6a;
     }
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  .contact {
+    padding: 0;
+  }
+}

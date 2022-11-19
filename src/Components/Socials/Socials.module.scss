@@ -64,3 +64,19 @@ $highlightColor: #feda6a;
     }
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  .socials {
+    &__links {
+      background: rgba(0, 0, 0, 0.7);
+      a {
+        height: 40px;
+      }
+    }
+
+    &__svg {
+      height: 40px;
+      width: 40px;
+    }
+  }
+}
