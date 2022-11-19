@@ -1,5 +1,11 @@
+$highlightColor: #feda6a;
+
 .about {
   line-height: 1.4;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
-  text-align: center;
+  text-align: left;
+
+  &__highlight {
+    color: $highlightColor;
+  }
 }

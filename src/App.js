@@ -8,12 +8,12 @@ import Socials from "./Components/Socials/Socials";
 const App = () => {
   ////// INPUTS ///////
   const logo = {
-    text: "Cédric Godwind",
+    text: "Djordje Vodovar",
     action() {
       setPage("home");
     },
   };
-  const description = "Videographer & Sound Designer";
+  const description = "An Aspiring frontend developer";
 
   const links = [
     {
@@ -45,27 +45,31 @@ const App = () => {
   const socials = [
     {
       name: "linkedin",
-      link: "https://linkedin.com",
+      link: "https://www.linkedin.com/in/djordje-vodovar-76027816b/",
     },
-    {
-      name: "youtube",
-      link: "https://youtube.com",
-    },
+    // {
+    //   name: "youtube",
+    //   link: "https://youtube.com",
+    // },
     {
       name: "instagram",
-      link: "https://instagram.com",
+      link: "https://www.instagram.com/zerofux_given/",
     },
+    // {
+    //   name: "twitter",
+    //   link: "https://twitter.com",
+    // },
+    // {
+    //   name: "facebook",
+    //   link: "https://facebook.com",
+    // },
+    // {
+    //   name: "tiktok",
+    //   link: "https://tiktok.com",
+    // },
     {
-      name: "twitter",
-      link: "https://twitter.com",
-    },
-    {
-      name: "facebook",
-      link: "https://facebook.com",
-    },
-    {
-      name: "tiktok",
-      link: "https://tiktok.com",
+      name: "github",
+      link: "https://github.com/djoksa4",
     },
   ];
   ////////////////////

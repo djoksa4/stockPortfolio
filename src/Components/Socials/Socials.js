@@ -8,6 +8,7 @@ import LinkedinSVG from "../../SVGs/LinkedinSVG";
 import YoutubeSVG from "../../SVGs/YoutubeSVG";
 import InstagramSVG from "../../SVGs/InstagramSVG";
 import TwitterSVG from "../../SVGs/TwitterSVG";
+import GitHubSVG from "../../SVGs/GitHubSVG";
 
 // Possible socials
 const socialsSVGs = {
@@ -17,6 +18,7 @@ const socialsSVGs = {
   twitter: <TwitterSVG className={classes.socials__svg} />,
   facebook: <FacebookSVG className={classes.socials__svg} />,
   tiktok: <TikTokSVG className={classes.socials__svg} />,
+  github: <GitHubSVG className={classes.socials__svg} />,
 };
 
 const Socials = (props) => {

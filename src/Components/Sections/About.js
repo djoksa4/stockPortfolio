@@ -3,13 +3,29 @@ import classes from "./About.module.scss";
 const About = () => {
   return (
     <div className={classes.about}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
+      <p>
+        {" "}
+        I am an aspiring Frontend Web Developer interested in building websites
+        and web apps that lead to success of larger products.
+      </p>
+      <p>
+        I also like sharing the content I create and the knowledge I pick up in
+        the process in regards to Web Development beneficial to other people in
+        the community. <br />
+        You can checkout my live projects in the{" "}
+        <span className={classes.about__highlight}>Work</span> section and the
+        code itself on my{" "}
+        <span className={classes.about__highlight}>GitHub</span>.
+      </p>
+      <p>
+        Currently I'm working full-time as an App Support Engineer focusing
+        mostly on the backend (Linux, SQL) but I am open to Frontend job
+        opportunities where I can contribute, learn and grow. <br />
+        Please don't hesitate to reach out to me either through the{" "}
+        <span className={classes.about__highlight}>Contact</span> section or via{" "}
+        <span className={classes.about__highlight}>LinkedIn</span> regarding any
+        offers and/or questions.
+      </p>
     </div>
   );
 };
