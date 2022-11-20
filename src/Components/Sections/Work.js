@@ -30,8 +30,8 @@ const dummyItems = [
     img: "/img/djordjevodovar/6-portfolio.PNG",
     title: "Old portfolio page",
     description:
-      "My previous portfolio page and also my first React project. A single page site built using React and its various features such as Wrapper components, State, Redux, React Router, conditional JSX and CSS modules.",
-    link: "https://djordjevodovar.netlify.app/",
+      "My previous portfolio page and also my first ever React project. A single page site built using React and its various features such as Wrapper components, State, Redux, React Router, conditional JSX and CSS modules.",
+    link: "https://djordjevodovar-old-portfolio.netlify.app/",
   },
 ];
 
