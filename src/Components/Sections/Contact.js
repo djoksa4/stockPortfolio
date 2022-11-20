@@ -44,15 +44,6 @@ const Contact = () => {
     messageInputValue.length > 1 &&
     !messageInputInvalid;
 
-  const submitHandler = (e) => {
-    e.preventDefault();
-    if (!formValid) return;
-
-    nameReset();
-    emailReset();
-    messageReset();
-  };
-
   // CLASS HELPERS
   let nameInputControlClasses;
   if (!nameFocused) {
@@ -101,7 +92,6 @@ const Contact = () => {
       <form
         className={classes.contact__form}
         autoComplete="off"
-        onSubmit={submitHandler}
         action="https://formsubmit.co/f3049aa79f206be029ea80cedfb5cbb7"
         method="POST"
       >

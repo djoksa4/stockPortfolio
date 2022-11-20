@@ -6,32 +6,32 @@ import classes from "./Work.module.scss";
 
 const dummyItems = [
   {
-    img: "/img/walllight.jpg",
-    title: "First project",
+    img: "/img/djordjevodovar/7-cloneflix.PNG",
+    title: "Netflix Clone",
     description:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.",
-    link: "https://google.com/search?q=djordje+vodovar",
+      "A clone of the popular streaming service Netflix created for educational purposes. Includes fully functioning user-creation, authentication, individual user favorites lists, trailers, etc. Uses TMDb API and Firebase acting as a dummy backend.",
+    link: "https://cloneflixify.netlify.app/",
   },
   {
-    img: "/img/oldcamera.jpg",
-    title: "Second project",
+    img: "/img/djordjevodovar/8-cryptonixx.PNG",
+    title: "CryptoNixx",
     description:
-      "Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.",
-    link: "https://google.com/search?q=vodovar+djordje",
+      "A fully functional crypto-currency tracking app providing information on latest (or historical) price changes, market caps, etc. Built using Next.js and TypeScript.",
+    link: "https://crypto-nixx.vercel.app/",
   },
   {
-    img: "/img/camerafocus.jpg",
-    title: "Third project",
+    img: "/img/djordjevodovar/9-orgnizzee.PNG",
+    title: "Orgnizzee",
     description:
-      "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.",
-    link: "https://google.com",
+      "A personal organizer app which currently has a fully functioning Expense Tracker module and a Dashboard module. Built using Next.js, React, Typescript, SCSS modules and Apexcharts. If you're interested in testing it please either create a user or use the test one (u: test@test.test | p: test44).",
+    link: "https://orgnizzee.vercel.app/",
   },
   {
-    img: "/img/mixer.jpg",
-    title: "Fourth project",
+    img: "/img/djordjevodovar/6-portfolio.PNG",
+    title: "Old portfolio page",
     description:
-      "Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.",
-    link: "https://google.com/search?q=djordjevodovar",
+      "My previous portfolio page and also my first React project. A single page site built using React and its various features such as Wrapper components, State, Redux, React Router, conditional JSX and CSS modules.",
+    link: "https://djordjevodovar.netlify.app/",
   },
 ];
 
